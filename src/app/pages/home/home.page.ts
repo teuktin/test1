@@ -29,7 +29,7 @@ export class HomePage implements OnInit {
       this.users = data;
 
       console.log(this.users);
-      
+
       this.users.forEach(element => {
         console.log(element.name)
       });
