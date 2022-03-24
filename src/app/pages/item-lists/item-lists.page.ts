@@ -4,11 +4,11 @@ import { ProductService } from 'src/app/services/product/product.service';
 import { DataService } from '../../services/data/data.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'app-item-lists',
+  templateUrl: './item-lists.page.html',
+  styleUrls: ['./item-lists.page.scss'],
 })
-export class HomePage implements OnInit {
+export class ItemListsPage implements OnInit {
   public categories = [];
   public featuredProducts = [];
   public bestSellProducts = [];

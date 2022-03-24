@@ -43,15 +43,15 @@
 
   <div class="title ion-padding">
     <h2 class="font-bold">Featured</h2>
-    <p>See all</p>
+    <p routerLink="/item-lists">See all</p>
   </div>
 
   <div class="product-slider ion-padding-start">
     <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
-      <ion-slide *ngFor="let product of featuredProducts">
+      <ion-slide *ngFor="let product of products">
         <ion-col class="ion-text-left" routerLink="/item-details" routerDirection="forward">
-          <img src="{{ product.image }}" />
-          <p>${{ product.price }}</p>
+          <img src="{{ '../../assets/products/prod-1.png' }}" />
+          <p>Rp. {{ product.price | number: '.0' }}</p>
           <h6>{{ product.name }}</h6>
         </ion-col>
       </ion-slide>
@@ -60,7 +60,7 @@
 
   <div class="title ion-padding">
     <h2 class="font-bold">Best Sell</h2>
-    <p>See all</p>
+    <p routerLink="/item-lists">See all</p>
   </div>
 
   <div class="product-slider ion-padding-start">

@@ -6,7 +6,7 @@ export const environment = {
   production: false
 };
 
-export const SERVER_URL = 'https://jsonplaceholder.typicode.com/';
+export const SERVER_URL = 'https://joharklik.standtech.id/api/v1/';
 
 /*
  * For easier debugging in development mode, you can import the following file

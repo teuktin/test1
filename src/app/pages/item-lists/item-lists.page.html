@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button>
+        <img src="../../assets/menu_bar.svg" />
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+        <span>&nbsp;</span>
+      </ion-button>
+      <ion-button class="filter">
+        <ion-icon name="funnel-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="search ion-padding">
+    <ion-item lines="none">
+      <ion-input placeholder="Search Your Product"></ion-input>
+      <ion-icon name="search-outline" slot="start"></ion-icon>
+    </ion-item>
+  </div>
+
+  <ion-grid fixed >
+    <ion-row>
+      <ion-col *ngFor="let product of products; let i = index">
+        <div class="product-card">
+          <ion-col class="ion-text-left" routerLink="/item-details" routerDirection="forward">
+            <img src="{{ '../../assets/products/prod-1.png' }}" />
+            <p>Rp. {{ product.price | number: '.0' }}</p>
+            <h6>{{ product.name }}</h6>
+          </ion-col>
+        </div>
+      </ion-col>
+    </ion-row>
+ </ion-grid>
+
+  
+</ion-content>
+
