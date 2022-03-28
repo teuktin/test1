@@ -1,7 +1,7 @@
 {
-  "name": "ecomm-app",
+  "name": "joharKlik",
   "integrations": {
-    "cordova": {}
+    "capacitor": {}
   },
   "type": "angular"
 }
